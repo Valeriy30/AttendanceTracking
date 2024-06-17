@@ -1,0 +1,72 @@
+﻿<Window x:Class="AttendanceTracking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AttendanceTracking"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Image Source="/Res/logo.png"
+                   Width="100"
+                   Height="100">
+                
+            </Image>
+            <Button
+                x:Name="btnAttendance"
+             Width="180" 
+             Height="30"
+             Background="White"
+             Content="Посещаемость"
+             FontSize="15"
+                Margin="10"
+                Click="btnAttendance_Click"
+                >
+            </Button>
+            <Button
+                x:Name="btnStudent"
+                Width="180" 
+                Height="30"
+                Background="White"
+                Content="Ученики"
+                FontSize="15"
+                Margin="10"
+                Click="btnStudent_Click"
+                   >
+            </Button>
+            <Button
+                x:Name="btnGroups"
+                Width="180" 
+                Height="30"
+                Background="White"
+                Content="Группы"
+                FontSize="15"
+                Margin="10"
+                Click="btnGroups_Click"
+                   >
+            </Button>
+            <Button
+                x:Name="btnEmployee"
+                Width="180" 
+                Height="30"
+                Background="White"
+                Content="Сотрудники"
+                FontSize="15"
+                Margin="10"
+                Click="btnEmployee_Click"
+                    >
+            </Button>
+        </StackPanel>
+        <TextBlock Width="200" Height="40" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Text="Сменить пользователя"
+                   TextAlignment="Center"
+                   Foreground="#FFAFA6A6" MouseDown="TextBlock_MouseDown"
+                   >
+            
+        </TextBlock>
+    </Grid>
+</Window>
